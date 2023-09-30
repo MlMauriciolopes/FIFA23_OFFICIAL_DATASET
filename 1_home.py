@@ -15,13 +15,27 @@ if 'data' not in st.session_state:
 # Texto
 st.write("# FIFA 23 OFFICIAL DATASET ⚽️!")
 
+# Sidebar
 st.sidebar.markdown('Desenvolvido por [Asimov Academy]')
-btn = st.button(" Acesse os dados no Kaggle")
-if btn:
-    webbrowser.open_new_tab('https://www.kaggle.com/datasets/kevwesophia/fifa23-official-datasetclean-data/')
+st.sidebar.markdown('Melhorado por [Maurício Lopes]')
+st.sidebar.link_button("Download do Dataset do Kaggle", "https://www.kaggle.com/datasets/kevwesophia/fifa23-official-datasetclean-data/")
 
 st.markdown(
     """
-    The Football Player Dataset from 2017 to 2023 is a comprehensive collection of information about professional football players. It includes details such as player demographics, physical characteristics, playing statistics, contract details, club affiliations, market values, wages, preferred positions, work rates, skill ratings, and player development.
+    O conjunto de dados de jogadores de futebol de 2017 a 2023 é uma coleção abrangente de informações sobre jogadores de futebol profissionais. Inclui detalhes como dados demográficos dos jogadores, características físicas, estatísticas de jogo, detalhes de contratos, afiliações de clubes, valores de mercado, salários, posições preferenciais, taxas de trabalho, classificações de habilidades e desenvolvimento de jogadores.
+        
+    ## COMO UTILIZAR ESSA APLICAÇÃO:
+    Se você estiver utilizando um smartfone, no canto **superior esquerdo**, tem uma seta que abre o menu de opções, com as seguintes abas:
+
+    ### Home: 
+    Página inicial dessa aplicação.
+    ### Players: 
+    Mostra o nome do clube, e o jogador correspondente dele.
+
+    ### Teams:
+    Seleciona o clube e mostra as informações de todos os jogadores. A ordem inicial é em Ordem **Overall**.
+
+    ### Extra:
+    Você também pode além de selecionar da forma padrão de drop down, digitar na aba de seleção de clubes, além de clicar no gráfico e alterar a ordem das informações (crescente e decrescente).
     """
 )
