@@ -12,12 +12,12 @@ df_data = st.session_state['data']
 
 # Selectbox Clubes
 clubes = df_data['Club'].value_counts().index
-club = st.sidebar.selectbox("Clube", clubes)
+club = st.sidebar.selectbox("Selecione AQUI o Clube desejado:", clubes)
 
 # Selectbox Jogadores
 df_players = df_data[df_data['Club'] == club]
 players = df_players['Name'].value_counts().index
-player = st.sidebar.selectbox('Jogador', players)
+player = st.sidebar.selectbox('Selecione Aqui o Jogador desejado:', players)
 
 # Estatisticas do jogador
 player_stats = df_data[df_data['Name'] == player].iloc[0]
