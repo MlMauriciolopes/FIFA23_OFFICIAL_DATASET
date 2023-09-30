@@ -1,4 +1,3 @@
-# streamlit run C:\\Users\\mlsil\\OneDrive\\Documentos\\projetos\\fifa_dashboard\\1_home.py
 # imports
 import streamlit as st
 import pandas as pd 
@@ -7,7 +6,7 @@ from datetime import datetime
 
 # dataset + filtros
 if 'data' not in st.session_state:
-    df_data = pd.read_csv(r'C:\\Users\\mlsil\\OneDrive\\Documentos\\projetos\\fifa_dashboard\\dataset\\CLEAN_FIFA23_official_data.csv', index_col=0)
+    df_data = pd.read_csv('dataset/CLEAN_FIFA23_official_data.csv', index_col=0)
     df_data = df_data[df_data["Contract Valid Until"] >= datetime.today().year]
     df_data = df_data[df_data['Value(£)'] > 0]
     df_data = df_data.sort_values(by="Overall", ascending=False)
