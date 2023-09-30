@@ -1,7 +1,5 @@
 # FIFA 23 Official Dataset - Portfolio
 
-![Aplicação FIFA 23](https://fifa23dashboard.streamlit.app/)
-
 ## Sobre o Dataset
 
 **CONTEXTO**
